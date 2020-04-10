@@ -1,0 +1,38 @@
+<p>dashboard works!</p>
+
+<nav>
+  <a routerLink="info" routerLinkActive="active">Info</a>
+  -
+  <a [routerLink]="[{ outlets: { warning: ['warning']} }]">Warning</a>
+  -
+  <a [routerLink]="[{ outlets: { danger: ['danger']} }]">Danger</a>
+</nav>
+
+
+<mat-grid-list cols="3" rowHeight="3:1">
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>Info Section</mat-card-title>
+      <mat-card-content>
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>Warning Section</mat-card-title>
+      <mat-card-content>
+        <router-outlet name="warning"></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>Danger Section</mat-card-title>
+      <mat-card-content>
+        <router-outlet name="danger"></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
