@@ -4,8 +4,9 @@ This project is a simple proof of concept on how to use Angular router-outlets t
 
 There are two demos:
 
-master branch: Nested router-outlets using static loading
-lazy-loading branch: Nested router-outlets using lazy-loading
+1. **master branch:** Nested router-outlets using static loading
+
+1. **lazy-loading branch:** Nested router-outlets using lazy-loading
 
 As of Angular 9.1, lazy-loading still has an issue that prevents direct mapping from static to lazy-loadig mode.
 
